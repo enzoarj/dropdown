@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Responsive Navigation Bar</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header id="header"><!--header-start-->
+  <div class="container">
+    <div class="header_left">
+      <a class="logo" href="#"><img src="amali_logo.jpg" alt="logo"></a>
+    </div>
+    <div class="header_right">
+      <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+      <input id="menuTrigger" type="checkbox" name="">
+      <nav class="main_nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">ANA CORNA</a></li>
+          <li><a href="#">Service</a>
+            <i class="fa fa-caret-down"></i>
+            <ul>
+              <li><a href="#">Web Designing</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Marketing</a>
+                <i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="#">Service 11</a></li>
+                  <li><a href="#">Service 11</a></li>
+                  <li><a href="#">Service 11</a>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                      <li><a href="#">Service 111</a></li>
+                      <li><a href="#">Service 111</a></li>
+                      <li><a href="#">Service 111</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>    
+    </div>
+  </div>
+</header><!--header-end-->
+<div class="divgrafico">
+  <div class="grafico">
+     <h2 class="titulografico">• Vitoria do Jarí</h2>
+     <canvas id="line-chartVitoria"></canvas>
+  </div>
+</div>
+
+<div class="divgrafico">
+  <div class="grafico">
+     <h2 class="titulografico">• Ana corna</h2>
+     <canvas id="line-chartAna"></canvas>
+  </div>
+</div>
+<script src="anacorna.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+<script src="vitoria.js"></script>
+</body>
+</html>
